@@ -235,8 +235,7 @@
   quit.addEventListener("click", (e) => {
     e.preventDefault;
 
-
-    const answer = confirm('Are you sure you want to quit?')
+    const answer = confirm('Are you sure you want to quit?');
     if (answer === true) {
       location.reload();
     }
