@@ -64,17 +64,17 @@
   });
 
 
-  roll.addEventListener("click", async (e) => {
+  roll.addEventListener("click", (e) => {
     e.preventDefault;
     
     count = 1;
     increase = 1;
 
-    await rollDice();
-    await gameLogic(count);
+    rollDice();
+    gameLogic(count);
   });
 
-  reroll.addEventListener("click", async (e) => {
+  reroll.addEventListener("click", (e) => {
     e.preventDefault;
 
     // rerollNumber.textContent = `Roll number ${count}`;
@@ -85,8 +85,8 @@
       increase += 0.5;
     }
     
-    await rollDice();
-    await gameLogic(count);
+    rollDice();
+    gameLogic(count);
   });
 
 
@@ -220,7 +220,7 @@
       }
       game.appendChild(player);
       control.appendChild(roll);
-    }, 3000);
+    }, 1000);
   };
 
   const scoresheet = () => {
